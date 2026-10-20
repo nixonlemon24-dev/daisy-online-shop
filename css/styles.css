@@ -9,7 +9,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:68px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.6 var(--body);padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.6 var(--body);}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.01em}
@@ -160,7 +160,7 @@ p{margin:0}
 .faq details p{padding:0 18px 18px;color:var(--muted)}
 
 /* Final CTA */
-.cta{display:grid;justify-items:center;gap:12px;text-align:center;padding:56px var(--pad);background:var(--thread);color:#fff}
+.cta{display:grid;justify-items:center;gap:12px;text-align:center;padding:56px var(--pad);background:var(--indigo);color:#fff}
 .cta img{border-radius:50%;background:var(--paper);padding:6px}
 .cta h2{font-size:clamp(2rem,8vw,3rem);font-weight:800}
 .cta .btn{margin-top:8px}
