@@ -108,3 +108,26 @@ boxImg.addEventListener('touchend', (e) => {
   const dx = e.changedTouches[0].clientX - tx;
   if (Math.abs(dx) > 50) showPhoto(current + (dx < 0 ? 1 : -1));
 }, { passive: true });
+
+// ===== Scroll reveal animations =====
+const revealSel = '.section__head,.card,.cats li,.why li,.review,.benefits li,.gallery-wrap,.gallery__item,.faq details,.card__container,.cta > *,.footer > *';
+const revealEls = [...document.querySelectorAll(revealSel)];
+
+// Stagger items that sit next to each other (cards, categories, reviews...)
+revealEls.forEach((el) => {
+  const sibs = [...el.parentElement.children].filter((c) => c.matches(revealSel));
+  const i = sibs.indexOf(el);
+  const stack = el.parentElement.matches('.cta, .footer');   // single column: one after another
+  el.style.setProperty('--d', (stack ? i * 110 : (i % 3) * 90) + 'ms');
+});
+
+if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  revealEls.forEach((el) => el.classList.add('in'));
+} else {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -24px 0px' });
+  revealEls.forEach((el) => io.observe(el));
+}
