@@ -25,11 +25,15 @@
   </a>
   <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu"><i></i><i></i></button>
   <nav class="nav__menu" id="menu" aria-label="Main">
-    <a href="#collection">Products</a>
-    <a href="#categories">Categories</a>
-    <a href="#reminders">Reminders</a>
-    <a href="#faq">FAQ</a>
-    <a class="btn btn--sm" href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">Shop Now</a>
+    <div class="nav__group nav__group--left">
+      <a href="#collection">Products</a>
+      <a href="#categories">Categories</a>
+    </div>
+    <div class="nav__group nav__group--right">
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--sm" href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">Shop Now</a>
+    </div>
   </nav>
 </header>
 
@@ -41,19 +45,19 @@
     <h1>Dress up their imagination.</h1>
     <p class="hero__lead">Cultural outfits, storybook characters and party classics for kids and adults. Ready for school events, themed parties and cosplay.</p>
     <a class="btn btn--lg" href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">Buy on Shopee</a>
-    <a class="hero__link" href="#collection">See the costumes</a>
+    <!-- <a class="hero__link" href="#collection">See the costumes</a> -->
   </div>
   <figure class="hero__art">
-    <img src="images/thailand.webp" alt="Four children wearing blue and gold Thai traditional costumes" width="900" height="900" fetchpriority="high">
+    <img src="images/balintawak.webp" alt="Filipiniana Balintawak dresses in colorful floral prints modeled by women, with traditional headscarves" width="900" height="900" fetchpriority="high">
   </figure>
 </section>
 
 <section class="benefits" aria-label="Highlights">
   <ul>
-    <li><b>Comfortable fabric</b><span>Easy to wear through a whole school day or show.</span></li>
-    <li><b>Stylish design</b><span>Traditional patterns and classic character looks.</span></li>
-    <li><b>Kids and adults</b><span>Dracula comes in kids and adult sizes.</span></li>
-    <li><b>Any occasion</b><span>School events, parties, cultural shows, cosplay.</span></li>
+    <li><b><span class="ico" aria-hidden="true">🧵</span>Comfortable fabric</b><span>Easy to wear through a whole school day or show.</span></li>
+    <li><b><span class="ico" aria-hidden="true">🎨</span>Stylish design</b><span>Traditional patterns and classic character looks.</span></li>
+    <li><b><span class="ico" aria-hidden="true">📏</span>Kids and adults</b><span>Costumes in kids and adult sizes.</span></li>
+    <li><b><span class="ico" aria-hidden="true">🎉</span>Any occasion</b><span>School events, parties, cultural shows, cosplay.</span></li>
   </ul>
 </section>
 
@@ -64,38 +68,43 @@
   </div>
   <div class="cards">
     <article class="card">
+      <span class="card__tag">Popular</span>
+      <div class="card__img"><img src="images/peter-pan.webp" alt="Peter Pan costume for kids with hat, shirt, belt, pants and shoes" loading="lazy" width="900" height="900"></div>
+      <h3>Peter Pan Costume</h3>
+      <p>Five pieces shown: feathered hat, jagged-hem shirt, belt, pants and shoes.</p>
+    </article>
+    <article class="card">
+      <span class="card__tag">Regional Wear</span>
       <div class="card__img"><img src="images/thailand.webp" alt="Thailand boy and girl costume for kids" loading="lazy" width="900" height="900"></div>
-      <h3>Thailand costume</h3>
+      <h3>Thailand Costume</h3>
       <p>Boy and girl sets in woven-style blue and gold prints, with matching hats and sashes.</p>
     </article>
     <article class="card">
+      <span class="card__tag">Traditional</span>
       <div class="card__img"><img src="images/balintawak.webp" alt="Girls in floral Balintawak Filipiniana costumes" loading="lazy" width="900" height="900"></div>
       <h3>Balintawak / Filipiniana</h3>
       <p>Floral girls costume with contrast sash and headscarf. Made for Buwan ng Wika.</p>
     </article>
     <article class="card">
+      <span class="card__tag">Regional Wear</span>
       <div class="card__img"><img src="images/japanese.webp" alt="Japanese costume for kids, floral dress and red happi set" loading="lazy" width="900" height="900"></div>
-      <h3>Japanese costume</h3>
+      <h3>Japanese Costume</h3>
       <p>A floral wrap dress with obi sash for girls and a red top-and-pants set for boys.</p>
     </article>
     <article class="card">
+      <span class="card__tag">Character</span>
       <div class="card__img"><img src="images/dracula.webp" alt="Dracula cape costume for kids and adults" loading="lazy" width="900" height="900"></div>
-      <h3>Dracula costume</h3>
+      <h3>Dracula Costume</h3>
       <p>Black flowing cape with a high red standing collar and tie. Kids and adults.</p>
     </article>
     <article class="card">
+      <span class="card__tag">Character</span>
       <div class="card__img"><img src="images/witch.webp" alt="Black witch costume for kids with jagged sleeves and hem" loading="lazy" width="900" height="900"></div>
-      <h3>Witch costume</h3>
+      <h3>Witch Costume</h3>
       <p>Black dress with a bow-tie neckline and jagged sleeves and hem. Hat not included.</p>
     </article>
-    <article class="card">
-      <div class="card__img"><span class="badge">Popular</span><img src="images/peter-pan.webp" alt="Peter Pan costume for kids with hat, shirt, belt, pants and shoes" loading="lazy" width="900" height="900"></div>
-      <h3>Peter Pan costume</h3>
-      <p>Five pieces shown: feathered hat, jagged-hem shirt, belt, pants and shoes.</p>
-    </article>
-
-    
   </div>
+
     <div class="card__container">
       <a class="card__cta" href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">View More on Shopee</a>
     </div>
@@ -125,12 +134,24 @@
   <div class="section__head">
     <h2>Why choose Daisy</h2>
   </div>
-  <ul class="why">
-    <li><h3>Looks that fit the event</h3><p>Buwan ng Wika, Nutrition Month, Halloween, international day. Pick a costume that matches the program.</p></li>
-    <li><h3>Complete outfits</h3><p>Peter Pan lists hat, shirt, belt, pants and shoes. Thailand sets pair a top with bottoms and a hat or sash.</p></li>
-    <li><h3>Easy to wear</h3><p>Lightweight and comfortable fabric, so kids can move, sit and perform.</p></li>
-    <li><h3>A shop since 2020</h3><p>Daisy Online Shop has been selling on Shopee since 2020.</p></li>
-  </ul>
+<ul class="why">
+  <li>
+    <img class="why__icon" src="images/kid.png" alt="" width="88" height="88" loading="lazy">
+    <div><h3>Looks that fit the event</h3><p>Buwan ng Wika, Nutrition Month, Halloween, international day. Pick a costume that matches the program.</p></div>
+  </li>
+  <li>
+    <img class="why__icon" src="images/clothes.png" alt="" width="88" height="88" loading="lazy">
+    <div><h3>Complete outfits</h3><p>Peter Pan lists hat, shirt, belt, pants and shoes. Thailand sets pair a top with bottoms and a hat or sash.</p></div>
+  </li>
+  <li>
+    <img class="why__icon" src="images/wear.png" alt="" width="88" height="88" loading="lazy">
+    <div><h3>Easy to wear</h3><p>Lightweight and comfortable fabric, so kids can move, sit and perform.</p></div>
+  </li>
+  <li>
+    <img class="why__icon" src="images/shop.png" alt="" width="88" height="88" loading="lazy">
+    <div><h3>A shop since 2020</h3><p>Daisy Online Shop has been selling on Shopee since 2020.</p></div>
+  </li>
+</ul>
 </section>
 
 <section class="section section--tint" id="categories">
@@ -138,59 +159,101 @@
     <h2>Shop by Category</h2>
     <p>Find the right outfit faster. Each category opens our Shopee store.</p>
   </div>
-  <ul class="cats">
-    <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener"><b>Character Costumes</b><span>Dracula, Witch, Peter Pan and more storybook looks.</span></a></li>
-    <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener"><b>Filipino Traditional Wear</b><span>Balintawak and Filipiniana outfits for Buwan ng Wika and cultural events.</span></a></li>
-    <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener"><b>Belts &amp; Scarves</b><span>Finishing pieces to go with your costume.</span></a></li>
-    <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener"><b>DepEd Teachers Uniform</b><span>Uniforms for DepEd teachers.</span></a></li>
-    <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener"><b>United Nations Costume</b><span>National costumes for UN Day and international events, like our Thailand and Japanese sets.</span></a></li>
-  </ul>
+<ul class="cats">
+  <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">
+    <img class="cats__icon" src="images/cat-character.webp" alt="" width="72" height="72" loading="lazy">
+    <b>Character Costumes</b><span>Dracula, Witch, Peter Pan and more storybook looks.</span></a></li>
+  <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">
+    <img class="cats__icon" src="images/cat-filipino.webp" alt="" width="72" height="72" loading="lazy">
+    <b>Filipino Traditional Wear</b><span>Balintawak and Filipiniana outfits for Buwan ng Wika and cultural events.</span></a></li>
+  <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">
+    <img class="cats__icon" src="images/cat-belts.webp" alt="" width="72" height="72" loading="lazy">
+    <b>Belts &amp; Scarves</b><span>Finishing pieces to go with your costume.</span></a></li>
+  <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">
+    <img class="cats__icon" src="images/cat-deped.webp" alt="" width="72" height="72" loading="lazy">
+    <b>DepEd Teachers Uniform</b><span>Uniforms for DepEd teachers.</span></a></li>
+  <li><a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">
+    <img class="cats__icon" src="images/cat-un.webp" alt="" width="72" height="72" loading="lazy">
+    <b>United Nations Costume</b><span>National costumes for UN Day and international events, like our Thailand and Japanese sets.</span></a></li>
+</ul>
+<div class="card__container">
+  <a class="card__cta" href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">Shop All on Shopee</a>
+</div>
 </section>
 
-<section class="section" id="reminders">
+<section class="section" id="testimonials">
   <div class="section__head">
-    <h2>Important reminders</h2>
-    <p>Please read before you order.</p>
+    <h2>Testimonials</h2>
+    <p>Real reviews from buyers on our Shopee store.</p>
   </div>
-  <div class="lang" role="tablist" aria-label="Language">
-    <button role="tab" id="tab-en" aria-selected="true" aria-controls="rem-en">English</button>
-    <button role="tab" id="tab-tl" aria-selected="false" aria-controls="rem-tl" tabindex="-1">Filipino</button>
+  <div class="reviews">
+    <figure class="review">
+      <div class="review__stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote><p>Cute ng style ng costumes sa store nato. &#128525; Medjo nalakihan lang ako sa small size for my 6 years old coz petite &amp; not so tall ang anak ko (I bet American size pala ang costumes) pina resize ko lang yung pants sa anak ko. Niways, bait ni seller. Nag accommodate talaga sa queries ng costumer. Keep it up, seller! Will buy another costume soon! God bless. &#128153;&#128155;</p></blockquote>
+      <figcaption><b>jillelitsea</b><span><time datetime="2024-10-13">Oct 13, 2024</time> &middot; Thailand Boy and Girl Costume for Kids, S</span></figcaption>
+    </figure>
+    <figure class="review">
+      <div class="review__stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote><p>Kasya sa pinsan ko. Cutee nilang tignan. Bagay lang sa kanila. Maganda din tela neto at super cheap kumpara sa iba. Correct design at size ang dumating. Good job kay seller. More sales to come.</p></blockquote>
+      <figcaption><b>c*****o</b><span><time datetime="2023-09-08">Sep 8, 2023</time> &middot; Traditional Floral Balintawak/Filipiniana Kids Costume, S: 5&ndash;6 yrs old</span></figcaption>
+    </figure>
+    <figure class="review">
+      <div class="review__stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>
+       
+        <p>True to size, delivered well and nice Filipiniana attire. Nagamit ko sa DepEd night namin. At gagamitin din ng anak ko</p>
+        <p class="review__tags">Appearance: nice &middot; Material quality: good quality &middot; Colour: floral red</p>
+      </blockquote>
+      <figcaption><b>streetballin</b><span><time datetime="2023-08-27">Aug 27, 2023</time> &middot;Traditional Floral Balintawak Filipiniana Dress Adult  &middot; Red Adult, L</span></figcaption>
+    </figure>
   </div>
-  <div class="reminders" id="rem-en" role="tabpanel" aria-labelledby="tab-en">
-    <ol>
-      <li>Verify and ensure that your name, contact information, and address are accurate and up to date.</li>
-      <li>Plan ahead and place your order in advance to avoid the possibility of your parcel arriving after your desired date of use, which may result in refusal of delivery.</li>
-      <li>Carefully review the sizing, color, and quantity of your order to ensure accuracy.</li>
-      <li>When unboxing your order, record a video without any cuts. This is essential if you need to file a complaint regarding faulty or incomplete products.</li>
-      <li>Utilize the app&rsquo;s order tracking feature to stay informed about the shipping process. Please note that we do not have control over the shipping process itself.</li>
-      <li>Customers who refuse their parcels may face account restrictions or be blocked from future purchases.</li>
-    </ol>
-    <p class="reminders__thanks">Thank you very much!</p>
-  </div>
-  <div class="reminders" id="rem-tl" role="tabpanel" aria-labelledby="tab-tl" lang="fil" hidden>
-    <ol>
-      <li>Siguraduhin at tiyakin na tama ang iyong Pangalan, kontak, at address.</li>
-      <li>Mag-order nang maaga upang maiwasan ang pagtanggi ng parcel kung hindi magtugma ang dating ng parcel sa takdang petsa ng paggamit.</li>
-      <li>Tiyakin ang tamang sukat, kulay, at dami ng iyong order.</li>
-      <li>Bumuo ng isang video ng iyong unboxing na walang putol. Ito ay mahalaga para sa reklamo tungkol sa mga sira o kulang na produkto.</li>
-      <li>I-track ang iyong order sa pamamagitan ng app, dahil wala tayong kontrol sa proseso ng pagpapadala.</li>
-      <li>Ang mga customer na tumatanggi sa kanilang parcel ay maaaring ma-block sa mga susunod na transaksyon.</li>
-    </ol>
-    <p class="reminders__thanks">Maraming salamat po!</p>
+  <div class="card__container">
+    <a class="card__cta" href="https://shopee.ph/buyer/568528673/rating?shop_id=568509088" target="_blank" rel="noopener">See more on Shopee</a>
   </div>
 </section>
-
-<!-- Customer reviews: omitted on purpose. Add real reviews from the Shopee listing here once you have permission to quote them. -->
 
 <section class="section" id="faq">
   <div class="section__head"><h2>Questions</h2></div>
   <div class="faq">
-    <details><summary>Where do I buy?</summary><p>On our Shopee store. Every Buy button on this page opens it.</p></details>
-    <details><summary>What sizes and colors are available?</summary><p>Sizes and colors can change by costume and stock, so check the Shopee listing. Dracula is shown in black.</p></details>
-    <details><summary>How much is it?</summary><p>Prices are set on Shopee, so you always see the current price there.</p></details>
-    <details><summary>Are the costumes for kids only?</summary><p>Most are for kids. The Dracula costume is made for kids and adults.</p></details>
-    <details><summary>What events are they good for?</summary><p>School events, themed parties, cultural shows and cosplay.</p></details>
-    <details><summary>Can I ask the shop a question?</summary><p>Yes. Open the store on Shopee and use its chat.</p></details>
+
+    <details>
+      <summary>Where can I buy your costumes?</summary>
+      <p>You can shop for our costumes directly from our Shopee store. Simply click any “Buy Now” or “Shop Now” button on this website to view our products and place your order.</p>
+    </details>
+
+    <details>
+      <summary>What sizes and colors are available?</summary>
+      <p>Available sizes and colors vary depending on the costume and current stock. Please visit the product listing on Shopee to check the available options before placing your order.</p>
+    </details>
+
+    <details>
+      <summary>How much do the costumes cost?</summary>
+      <p>Our prices may vary by costume and are listed on Shopee. Visit our store to see the latest prices, available promotions, and product details.</p>
+    </details>
+
+    <details>
+      <summary>Do you offer costumes for both kids and adults?</summary>
+      <p>Yes! We offer a variety of costumes primarily for kids, with selected designs also available for adults. Check our Shopee store to explore the available styles and sizes.</p>
+    </details>
+
+    <details>
+      <summary>What occasions are your costumes suitable for?</summary>
+      <p>Our costumes are perfect for school activities, themed parties, cultural performances, Halloween events, cosplay, stage shows, and other special occasions.</p>
+    </details>
+
+  <details>
+    <summary>How can I contact your shop?</summary>
+    <p>We’re happy to help! If you have questions about our costumes, sizes, or orders, you can reach us through any of the following channels:</p>
+    <ul>
+      <li><strong>Facebook:</strong> <a href="https://www.facebook.com/deasythreads" target="_blank" rel="noopener noreferrer">Deasy Threads</a></li>
+      <li><strong>Phone:</strong> <a href="tel:09279010506">0927 901 0506</a></li>
+      <li><strong>Email:</strong> <a href="mailto:dcbvalentin@gmail.com">dcbvalentin@gmail.com</a></li>
+      <li><strong>Shopee:</strong> <a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener noreferrer">Daisy Online Shop</a></li>
+    </ul>
+    <p>You can also message us directly through our Shopee store. We look forward to assisting you!</p>
+  </details>
+
+
   </div>
 </section>
 
@@ -208,7 +271,7 @@
   <p>Costumes for every special moment. Est. 2020.</p>
   <nav aria-label="Footer">
     <a href="#collection">Products</a>
-    <a href="#reminders">Reminders</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#faq">FAQ</a>
     <a href="https://shopee.ph/daisyonlineshop2024" target="_blank" rel="noopener">Our Shopee store</a>
   </nav>
@@ -223,122 +286,6 @@
   <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">&lsaquo;</button>
   <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo">&rsaquo;</button>
 </dialog>
-
-<script>
-// Mobile menu
-const toggle = document.querySelector('.nav__toggle');
-const menu = document.getElementById('menu');
-
-function setMenu(open) {
-  toggle.setAttribute('aria-expanded', String(open));
-  menu.classList.toggle('open', open);
-}
-
-toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
-menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
-
-// Gallery lightbox
-const box = document.querySelector('.lightbox');
-const boxImg = box.querySelector('img');
-
-document.querySelectorAll('.gallery__item').forEach((item) => {
-  item.addEventListener('click', () => {
-    boxImg.src = item.dataset.full;
-    boxImg.alt = item.dataset.alt || '';
-    box.showModal();
-  });
-});
-
-box.querySelector('.lightbox__close').addEventListener('click', () => box.close());
-box.addEventListener('click', (e) => { if (e.target === box) box.close(); });
-
-// Open one FAQ item at a time
-const faqs = document.querySelectorAll('.faq details');
-faqs.forEach((d) => d.addEventListener('toggle', () => {
-  if (d.open) faqs.forEach((o) => { if (o !== d) o.open = false; });
-}));
-
-// Reminders language tabs
-const tabs = document.querySelectorAll('.lang [role="tab"]');
-tabs.forEach((t) => t.addEventListener('click', () => {
-  tabs.forEach((o) => {
-    const on = o === t;
-    o.setAttribute('aria-selected', String(on));
-    o.tabIndex = on ? 0 : -1;
-    document.getElementById(o.getAttribute('aria-controls')).hidden = !on;
-  });
-}));
-
-// Gallery: arrows, dots, mouse drag, lightbox with swipe
-const gal = document.querySelector('.gallery');
-const items = [...gal.querySelectorAll('.gallery__item')];
-const dots = document.querySelector('.gallery__dots');
-const prevBtn = document.querySelector('.gallery__nav--prev');
-const nextBtn = document.querySelector('.gallery__nav--next');
-items.forEach(() => dots.appendChild(document.createElement('i')));
-
-const step = () => items[0].getBoundingClientRect().width + 12;
-function syncGallery() {
-  const i = Math.min(items.length - 1, Math.round(gal.scrollLeft / step()));
-  [...dots.children].forEach((d, n) => d.classList.toggle('on', n === i));
-  prevBtn.disabled = gal.scrollLeft < 4;
-  nextBtn.disabled = gal.scrollLeft + gal.clientWidth >= gal.scrollWidth - 4;
-}
-gal.addEventListener('scroll', () => requestAnimationFrame(syncGallery), { passive: true });
-window.addEventListener('resize', syncGallery);
-prevBtn.addEventListener('click', () => gal.scrollBy({ left: -step(), behavior: 'smooth' }));
-nextBtn.addEventListener('click', () => gal.scrollBy({ left: step(), behavior: 'smooth' }));
-gal.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') gal.scrollBy({ left: step(), behavior: 'smooth' });
-  if (e.key === 'ArrowLeft') gal.scrollBy({ left: -step(), behavior: 'smooth' });
-});
-
-// Mouse drag (touch uses native swipe)
-let down = false, moved = false, startX = 0, startLeft = 0;
-gal.addEventListener('pointerdown', (e) => {
-  if (e.pointerType !== 'mouse') return;
-  down = true; moved = false; startX = e.clientX; startLeft = gal.scrollLeft;
-});
-window.addEventListener('pointermove', (e) => {
-  if (!down) return;
-  const dx = e.clientX - startX;
-  if (Math.abs(dx) > 5) { moved = true; gal.classList.add('dragging'); }
-  if (moved) gal.scrollLeft = startLeft - dx;
-});
-window.addEventListener('pointerup', () => {
-  if (!down) return;
-  down = false;
-  if (moved) {
-    gal.classList.remove('dragging');
-    gal.scrollTo({ left: Math.round(gal.scrollLeft / step()) * step(), behavior: 'smooth' });
-  }
-});
-gal.addEventListener('click', (e) => { if (moved) { e.stopImmediatePropagation(); e.preventDefault(); moved = false; } }, true);
-syncGallery();
-
-// Lightbox navigation
-let current = 0;
-function showPhoto(i) {
-  current = (i + items.length) % items.length;
-  boxImg.src = items[current].dataset.full;
-  boxImg.alt = items[current].dataset.alt || '';
-  items[current].scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-}
-items.forEach((item, i) => item.addEventListener('click', () => { current = i; }));
-box.querySelector('.lightbox__nav--prev').addEventListener('click', () => showPhoto(current - 1));
-box.querySelector('.lightbox__nav--next').addEventListener('click', () => showPhoto(current + 1));
-box.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') showPhoto(current + 1);
-  if (e.key === 'ArrowLeft') showPhoto(current - 1);
-});
-let tx = 0;
-boxImg.addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; }, { passive: true });
-boxImg.addEventListener('touchend', (e) => {
-  const dx = e.changedTouches[0].clientX - tx;
-  if (Math.abs(dx) > 50) showPhoto(current + (dx < 0 ? 1 : -1));
-}, { passive: true });
-
-</script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
