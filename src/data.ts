@@ -8,7 +8,7 @@ export interface WhyItem { icon: string; title: string; text: string }
 export interface Category { icon: string; title: string; text: string }
 export interface Review {
   user: string;
-  date: string;       // ISO date for <time dateTime>
+  date: string; 
   dateLabel: string;
   item: string;
   paragraphs: string[];
